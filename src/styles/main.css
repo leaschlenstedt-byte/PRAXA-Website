@@ -261,19 +261,57 @@ p  { max-width: 60ch; line-height: 1.7; }
 /* ── PROBLEM ── */
 .problem { background: #fff; }
 .problem h2 { color: var(--moss); margin-bottom: 1rem; max-width: 24ch; }
-.stat-row   { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
-.stat-block { border-left: 2px solid var(--moss-12); padding-left: 1.5rem; position: relative; overflow: hidden; }
-.stat-num   { font-weight: 700; font-size: 2.8rem; color: var(--moss); line-height: 1; margin-bottom: 0.5rem; }
-.stat-num em { color: var(--sage); font-style: normal; }
-.stat-txt { font-size: 0.875rem; color: var(--moss-60); line-height: 1.6; margin-bottom: 0.5rem; max-width: none; }
-.stat-src { font-size: 0.68rem; color: var(--moss-40); }
 
 /* ── STATS STRIP ── */
-.stats-strip { background: #fff; padding: 2.75rem 0; border-top: 0.5px solid var(--moss-12); border-bottom: 0.5px solid var(--moss-12); }
-.stats-inner { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
-.stat-big-item { border-left: 2px solid var(--moss-12); padding-left: 1.5rem; }
-.stat-big-num   { font-weight: 700; font-size: 2rem; color: var(--moss); line-height: 1; margin-bottom: 0.4rem; letter-spacing: -0.02em; }
-.stat-big-label { font-size: 0.85rem; color: var(--moss-60); line-height: 1.5; }
+.stats-strip {
+  background: var(--moss);
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+.stats-strip::after {
+  content: '';
+  position: absolute; inset: 0; pointer-events: none; z-index: 0;
+  background-image: radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+.stats-inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  position: relative; z-index: 1;
+}
+.stat-big-item {
+  padding: 0 2.5rem;
+  border-left: 0.5px solid var(--white-12);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.stat-big-item:first-child { border-left: none; padding-left: 0; }
+.stat-big-num {
+  font-weight: 700;
+  font-size: clamp(2.8rem, 4.5vw, 3.8rem);
+  color: var(--lime);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+.stat-big-num em { font-style: normal; color: var(--lime); }
+.stat-big-label {
+  font-size: 0.875rem;
+  color: var(--white-55);
+  line-height: 1.55;
+  max-width: 18ch;
+}
+
+@media (max-width: 768px) {
+  .stats-inner { grid-template-columns: repeat(2, 1fr); gap: 3rem 0; }
+  .stat-big-item:nth-child(3) { border-left: none; padding-left: 0; }
+}
+@media (max-width: 480px) {
+  .stats-inner { grid-template-columns: 1fr; }
+  .stat-big-item { border-left: none; padding-left: 0; border-top: 0.5px solid var(--white-12); padding-top: 2rem; }
+  .stat-big-item:first-child { border-top: none; padding-top: 0; }
+}
 
 /* ── USE CASES ── */
 .usecases { background: var(--linen); }
@@ -450,22 +488,6 @@ p  { max-width: 60ch; line-height: 1.7; }
 .hero-ring--tr { width: 520px; top: -60px; right: -60px; }
 .hero-ring--bl { width: 300px; bottom: -80px; left: -80px; opacity: 0.85; }
 
-/* ── Problem: large watermark numbers behind stats ── */
-.stat-block[data-watermark]::before {
-  content: attr(data-watermark);
-  position: absolute;
-  right: -0.25rem;
-  bottom: -0.5rem;
-  font-size: 7.5rem;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: -0.04em;
-  color: rgba(61,92,82,0.04);
-  pointer-events: none;
-  user-select: none;
-  z-index: 0;
-}
-.stat-block > * { position: relative; z-index: 1; }
 
 /* ── How it works: connecting line + bg step numbers ── */
 .steps::before {
