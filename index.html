@@ -315,37 +315,83 @@
   <section class="how section" id="how">
     <div class="container">
       <p class="section-eyebrow" data-reveal>How it works</p>
-      <h2 data-reveal>Three steps. Real improvement.</h2>
+      <h2 data-reveal>Four steps. Real improvement.</h2>
       <p class="section-lead" data-reveal>PRAXA Skills puts learners in realistic conversations with an AI partner — then gives them specific feedback on what to do differently next time.</p>
-      <div class="steps">
-        <div class="step" data-step-bg="01" data-reveal>
-          <span class="step-num" aria-hidden="true">01</span>
-          <div class="step-body">
-            <p class="step-title">Upload your organization's context</p>
-            <p class="step-desc">Feed PRAXA Skills your own guidelines, playbooks, compliance standards, or conversation frameworks. Takes 20–30 minutes. The AI uses them to shape every scenario and every piece of feedback — so practice reflects your reality, not a generic template.</p>
+    </div>
+
+    <div class="how-carousel">
+      <button class="carousel-btn carousel-btn--prev" id="how-prev" aria-label="Previous step">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+
+      <div class="carousel-scene">
+        <div class="carousel-track" id="carousel-track">
+
+          <div class="carousel-slide" data-index="0">
+            <div class="how-card">
+              <div class="how-card-top">
+                <span class="how-card-step">01</span>
+                <span class="how-card-tag">Setup</span>
+              </div>
+              <h3 class="how-card-title">Upload your organization's context</h3>
+              <p class="how-card-desc">Feed PRAXA Skills your own guidelines, playbooks, compliance standards, or conversation frameworks. Takes 20–30 minutes. The AI uses them to shape every scenario and every piece of feedback — so practice reflects your reality, not a generic template.</p>
+              <span class="how-card-bg-num" aria-hidden="true">01</span>
+            </div>
           </div>
-        </div>
-        <div class="step" data-step-bg="02" data-reveal>
-          <span class="step-num" aria-hidden="true">02</span>
-          <div class="step-body">
-            <p class="step-title">Choose a scenario and practice</p>
-            <p class="step-desc">Pick from 200+ pre-built workplace conversations or build your own. Voice or text. The AI plays the other party — customer, employee, candidate, family member — and responds the way a real person would, including difficult moments: deflection, emotion, escalation.</p>
+
+          <div class="carousel-slide" data-index="1">
+            <div class="how-card">
+              <div class="how-card-top">
+                <span class="how-card-step">02</span>
+                <span class="how-card-tag">Practice</span>
+              </div>
+              <h3 class="how-card-title">Choose a scenario and practice</h3>
+              <p class="how-card-desc">Pick from 200+ pre-built workplace conversations or build your own. Voice or text. The AI plays the other party — customer, employee, candidate, family member — and responds the way a real person would, including difficult moments: deflection, emotion, escalation.</p>
+              <span class="how-card-bg-num" aria-hidden="true">02</span>
+            </div>
           </div>
-        </div>
-        <div class="step" data-step-bg="03" data-reveal>
-          <span class="step-num" aria-hidden="true">03</span>
-          <div class="step-body">
-            <p class="step-title">Get specific, structured feedback</p>
-            <p class="step-desc">After every session, see exactly what worked, what to adjust, and what to try next time. Not a generic score — concrete observations tied to the actual conversation and your uploaded guidelines.</p>
+
+          <div class="carousel-slide" data-index="2">
+            <div class="how-card">
+              <div class="how-card-top">
+                <span class="how-card-step">03</span>
+                <span class="how-card-tag">Feedback</span>
+              </div>
+              <h3 class="how-card-title">Get specific, structured feedback</h3>
+              <p class="how-card-desc">After every session, see exactly what worked, what to adjust, and what to try next time. Not a generic score — concrete observations tied to the actual conversation and your uploaded guidelines.</p>
+              <span class="how-card-bg-num" aria-hidden="true">03</span>
+            </div>
           </div>
-        </div>
-        <div class="step" data-step-bg="04" data-reveal>
-          <span class="step-num" aria-hidden="true">04</span>
-          <div class="step-body">
-            <p class="step-title">Track progress across the team</p>
-            <p class="step-desc">Managers and L&amp;D leads see usage, completion rates, and skill gaps across the whole team. Identify where to invest next. Show ROI without manual reporting.</p>
+
+          <div class="carousel-slide" data-index="3">
+            <div class="how-card">
+              <div class="how-card-top">
+                <span class="how-card-step">04</span>
+                <span class="how-card-tag">Analytics</span>
+              </div>
+              <h3 class="how-card-title">Track progress across the team</h3>
+              <p class="how-card-desc">Managers and L&amp;D leads see usage, completion rates, and skill gaps across the whole team. Identify where to invest next. Show ROI without manual reporting.</p>
+              <span class="how-card-bg-num" aria-hidden="true">04</span>
+            </div>
           </div>
+
         </div>
+      </div>
+
+      <button class="carousel-btn carousel-btn--next" id="how-next" aria-label="Next step">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M7.5 5L12.5 10L7.5 15" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+
+    <div class="carousel-footer">
+      <div class="carousel-dots" id="how-dots">
+        <button class="carousel-dot is-active" data-index="0" aria-label="Step 1"></button>
+        <button class="carousel-dot" data-index="1" aria-label="Step 2"></button>
+        <button class="carousel-dot" data-index="2" aria-label="Step 3"></button>
+        <button class="carousel-dot" data-index="3" aria-label="Step 4"></button>
+      </div>
+      <div class="carousel-progress-wrap">
+        <div class="carousel-progress-fill" id="how-progress"></div>
       </div>
     </div>
   </section>
