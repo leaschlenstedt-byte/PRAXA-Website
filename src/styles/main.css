@@ -616,6 +616,7 @@ p  { max-width: 60ch; line-height: 1.7; }
    DECORATIVE SHAPES
    ════════════════════════════════════════════════════════ */
 
+
 /* ── Hero rings ── */
 .hero-deco { position: absolute; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
 .hero-ring { position: absolute; }

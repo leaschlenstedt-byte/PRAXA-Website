@@ -6,6 +6,7 @@ gsap.registerPlugin(ScrollTrigger)
 export function initAnimations() {
   heroEntrance()
   heroShapesParallax()
+
   scrollReveals()
   statCounters()
 }
@@ -40,6 +41,7 @@ function heroShapesParallax() {
     scrollTrigger: { trigger: '.cta-section', start: 'top bottom', end: 'bottom top', scrub: 0.8 }
   })
 }
+
 
 function scrollReveals() {
   gsap.utils.toArray('[data-reveal]:not([data-reveal="stagger"])').forEach(el => {
