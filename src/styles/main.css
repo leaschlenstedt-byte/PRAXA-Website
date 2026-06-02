@@ -216,8 +216,37 @@ p  { max-width: 60ch; line-height: 1.7; }
 .btn-outline:hover { border-color: rgba(255,255,255,0.7); color: #fff; transform: translateY(-1px); }
 
 /* ── Section helpers ── */
-.section-eyebrow { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--sage); margin-bottom: 0.75rem; }
-.section-lead    { color: var(--moss-60); font-size: 1rem; margin-bottom: 3rem; max-width: 54ch; }
+.section-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--moss);
+  margin-bottom: 2.5rem;
+  white-space: nowrap;
+}
+.section-eyebrow::before {
+  content: '';
+  width: 32px;
+  height: 2px;
+  background: var(--lime);
+  flex-shrink: 0;
+  border-radius: 1px;
+}
+.section-eyebrow::after {
+  content: '';
+  flex: 1;
+  height: 0.5px;
+  background: linear-gradient(to right, var(--moss-20), transparent);
+}
+/* On dark backgrounds */
+.responsible .section-eyebrow { color: rgba(255,255,255,0.5); }
+.responsible .section-eyebrow::after { background: linear-gradient(to right, rgba(255,255,255,0.15), transparent); }
+
+.section-lead { color: var(--moss-60); font-size: 1rem; margin-bottom: 3rem; max-width: 54ch; }
 
 /* ── HERO ── */
 .hero {
