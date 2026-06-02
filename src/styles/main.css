@@ -71,6 +71,39 @@ p  { max-width: 60ch; line-height: 1.7; }
 .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
 .section    { padding: var(--section-padding) 0; }
 
+/* ── SPLASH SCREEN ── */
+.splash {
+  position: fixed; inset: 0; z-index: 1000;
+  background: var(--moss);
+  display: flex; align-items: center; justify-content: center;
+  pointer-events: none;
+}
+.splash.is-done { display: none; }
+
+.splash-logo {
+  display: flex; align-items: center; gap: 1.1rem;
+  position: relative; z-index: 1;
+}
+.splash-mark svg { width: 72px; height: 72px; }
+.splash-text { display: flex; flex-direction: column; }
+.splash-wordmark {
+  font-weight: 700; font-size: 2.6rem; color: #fff;
+  letter-spacing: -0.02em; line-height: 1;
+}
+.splash-wordmark span { font-weight: 400; color: var(--sage); }
+.splash-tagline {
+  font-size: 0.72rem; letter-spacing: 0.16em;
+  text-transform: uppercase; color: rgba(255,255,255,0.35);
+  margin-top: 5px;
+}
+
+.splash-rings {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  pointer-events: none;
+}
+.splash-rings svg { width: min(600px, 90vmin); height: min(600px, 90vmin); }
+
 /* ── Scroll progress ── */
 .scroll-progress {
   position: fixed; top: 0; left: 0; z-index: 200;
