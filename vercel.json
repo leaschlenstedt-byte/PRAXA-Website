@@ -1,5 +1,9 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "cleanUrls": true
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/datenschutz", "destination": "/datenschutz.html" },
+    { "source": "/impressum",   "destination": "/impressum.html"   }
+  ]
 }
