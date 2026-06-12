@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impressum — PRAXA Skills</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #F7F4EE;
+      color: #3D5C52;
+      font-size: 17px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    .site-nav {
+      position: sticky; top: 0; z-index: 10;
+      background: #F7F4EE;
+      border-bottom: 1px solid rgba(61,92,82,0.10);
+      padding: 0 2rem;
+    }
+    .site-nav-inner {
+      max-width: 1100px; margin: 0 auto;
+      height: 68px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo {
+      font-size: 1rem; font-weight: 700; letter-spacing: -0.01em;
+      text-decoration: none;
+      display: flex; align-items: center; gap: 0.5rem;
+    }
+    .nav-logo span { color: #5C8A7A; }
+    .nav-back {
+      font-size: 0.85rem; font-weight: 500;
+      text-decoration: none;
+      opacity: 0.55;
+      transition: opacity 0.15s ease;
+    }
+    .nav-back:hover { opacity: 1; }
+
+    main { max-width: 680px; margin: 0 auto; padding: 4rem 2rem 6rem; }
+
+    .page-eyebrow {
+      font-size: 0.78rem; font-weight: 600;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: #5C8A7A;
+      margin-bottom: 0.75rem;
+    }
+    h1 {
+      font-size: clamp(1.6rem, 3vw, 2.1rem);
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      line-height: 1.18;
+      margin-bottom: 2.5rem;
+    }
+    h2 {
+      font-size: 0.95rem; font-weight: 600;
+      letter-spacing: 0.01em;
+      margin-top: 2rem; margin-bottom: 0.4rem;
+      text-transform: uppercase;
+      opacity: 0.5;
+    }
+    p { max-width: none; margin-bottom: 0.5rem; }
+    .placeholder {
+      background: rgba(200,255,61,0.35);
+      border-radius: 3px;
+      padding: 0 3px;
+      font-style: italic;
+    }
+    .divider {
+      border: none;
+      border-top: 1px solid rgba(61,92,82,0.12);
+      margin: 2rem 0;
+    }
+    .footer-note {
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a href="/" class="nav-logo">PRAXA <span>Skills</span></a>
+      <a href="/" class="nav-back">← Zurück zur Startseite</a>
+    </div>
+  </nav>
+
+  <main>
+    <p class="page-eyebrow">Rechtliches</p>
+    <h1>Impressum</h1>
+
+    <h2>Angaben gemäß § 5 TMG</h2>
+    <p>PRAXA Skills GmbH i.&nbsp;Gr.</p>
+    <p><span class="placeholder">[Straße und Hausnummer]</span></p>
+    <p><span class="placeholder">[PLZ]</span> <span class="placeholder">[Ort]</span></p>
+    <p>Deutschland</p>
+
+    <hr class="divider">
+
+    <h2>Vertreten durch</h2>
+    <p><span class="placeholder">[Geschäftsführung: Vor- und Nachname]</span></p>
+
+    <hr class="divider">
+
+    <h2>Kontakt</h2>
+    <p>Telefon: <span class="placeholder">[+49 ...]</span></p>
+    <p>E-Mail: <a href="mailto:hello@praxa.de">hello@praxa.de</a></p>
+
+    <hr class="divider">
+
+    <h2>Handelsregister</h2>
+    <p>Registergericht: <span class="placeholder">[z.&nbsp;B. Amtsgericht München]</span></p>
+    <p>Registernummer: <span class="placeholder">[HRB ...]</span></p>
+    <p><em>Hinweis: Die Gesellschaft befindet sich derzeit in Gründung (i.&nbsp;Gr.).</em></p>
+
+    <hr class="divider">
+
+    <h2>Umsatzsteuer-Identifikationsnummer</h2>
+    <p>USt-IdNr. gemäß § 27a UStG: <span class="placeholder">[DE...]</span></p>
+
+    <hr class="divider">
+
+    <h2>Verantwortlich für den Inhalt (§ 18 Abs. 2 MStV)</h2>
+    <p><span class="placeholder">[Vor- und Nachname]</span></p>
+    <p><span class="placeholder">[Adresse wie oben]</span></p>
+
+    <hr class="divider">
+
+    <h2>Haftungsausschluss</h2>
+    <p>Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt verlinkter Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
+
+    <p class="footer-note">Stand: Juni 2026</p>
+  </main>
+
+</body>
+</html>
