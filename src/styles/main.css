@@ -589,9 +589,9 @@ p  { max-width: 60ch; line-height: 1.7; }
 .comp-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: var(--radius-sm); }
 .comp-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
 .comp-table th { text-align: left; font-weight: 700; font-size: 0.75rem; letter-spacing: 0.04em; color: var(--moss); padding: 0.85rem 1.25rem; background: var(--moss-10); border-bottom: 0.5px solid var(--moss-20); }
-.comp-table th:first-child { width: 42%; }
+.comp-table th:first-child { width: 30%; }
 .comp-table td { padding: 0.9rem 1.25rem; border-bottom: 0.5px solid var(--moss-10); color: var(--moss); vertical-align: middle; }
-.comp-table td:first-child { hyphens: auto; overflow-wrap: break-word; }
+.comp-table td:first-child { hyphens: none; overflow-wrap: normal; }
 .comp-table tr:last-child td { border-bottom: none; }
 .comp-table tr:nth-child(even) td { background: rgba(255,255,255,0.6); }
 .comp-check  { color: var(--sage); font-weight: 700; }
