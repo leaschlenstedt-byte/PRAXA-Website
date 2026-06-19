@@ -631,6 +631,19 @@ p  { max-width: 60ch; line-height: 1.7; }
 .pricing-card.featured .btn-plan:hover { opacity: 0.9; }
 .pricing-note { font-size: 0.78rem; color: var(--moss-40); text-align: center; margin-top: 1.75rem; }
 
+/* ── PILOT PARTNERSHIP ── */
+.pilot-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 3rem 0 2.5rem; }
+.pilot-panel { background: #fff; border: 0.5px solid var(--moss-12); border-radius: var(--radius-sm); padding: 2rem; }
+.pilot-panel-title { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: var(--moss-60); margin-bottom: 1.25rem; }
+.pilot-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.8rem; }
+.pilot-list li { font-size: 0.9rem; color: var(--moss); padding-left: 1.5rem; position: relative; line-height: 1.5; }
+.pilot-list li::before { content: '✓'; position: absolute; left: 0; color: var(--sage); font-weight: 700; }
+.pilot-cta-wrap { display: flex; flex-direction: column; align-items: center; gap: 1.25rem; }
+.pilot-cta-wrap .btn-plan { background: var(--moss); color: #fff; border-color: var(--moss); padding: 0.85rem 2.5rem; display: inline-block; width: auto; }
+.pilot-cta-wrap .btn-plan:hover { background: var(--moss); opacity: 0.85; transform: translateY(-1px); }
+.pilot-cta-wrap .pricing-note { margin-top: 0; }
+@media (max-width: 640px) { .pilot-grid { grid-template-columns: 1fr; } }
+
 /* ── CTA ── */
 .cta-section { background: var(--moss); padding: 7rem 0; position: relative; overflow: hidden; }
 .cta-inner   { text-align: center; position: relative; z-index: 1; }
