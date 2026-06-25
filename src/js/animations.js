@@ -13,8 +13,7 @@ export function initAnimations() {
 
 function heroEntrance() {
   const tl = gsap.timeline({ delay: 0.15 })
-  tl.from('.hero-eyebrow', { y: 24, opacity: 0, duration: 0.65, ease: 'power3.out' })
-  tl.from('.hero-title',   { y: 40, opacity: 0, duration: 0.75, ease: 'power3.out' }, '-=0.4')
+  tl.from('.hero-title',   { y: 40, opacity: 0, duration: 0.75, ease: 'power3.out' })
   tl.from('.hero-lead',    { y: 24, opacity: 0, duration: 0.65, ease: 'power3.out' }, '-=0.45')
   tl.from('.hero-ctas',    { y: 20, opacity: 0, duration: 0.55, ease: 'power3.out' }, '-=0.4')
   tl.from('.hero-trust',   { y: 16, opacity: 0, duration: 0.5,  ease: 'power3.out' }, '-=0.35')
