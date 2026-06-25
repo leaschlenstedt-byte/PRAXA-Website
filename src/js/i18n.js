@@ -252,7 +252,7 @@ const translations = {
     'price.3.f5':      'SLA &amp; dedizierter Support',
     'price.3.f6':      'On-Premise-Hosting auf Anfrage',
     'price.3.cta':     'Angebot anfragen',
-    'pricing.note':    'Preise sind indikativ und richten sich nach Lernendenanzahl und Vertragslaufzeit. Sprechen Sie uns an, wir erstellen ein individuelles Angebot.',
+    'pricing.note':    'Alle Pakete auf Anfrage — wir erstellen Ihnen ein individuelles Angebot.',
 
     'cta.h2':       'PRAXA Skills in Aktion sehen?',
     'cta.p':        'Buchen Sie eine 30-Minuten-Demo. Wir zeigen Ihnen, wie PRAXA Skills in Ihr Trainingsangebot passt, und entwickeln gemeinsam ein Beispielszenario für Ihr Team.',
@@ -524,7 +524,7 @@ const translations = {
     'price.3.f5':      'SLA &amp; dedicated support',
     'price.3.f6':      'On-premise hosting on request',
     'price.3.cta':     'Contact us',
-    'pricing.note':    'Prices are indicative. Final pricing based on learner volume and contract length. Contact us for a custom quote.',
+    'pricing.note':    'All packages on request — we will put together a custom quote for you.',
 
     'cta.h2':       'Ready to see PRAXA Skills in action?',
     'cta.p':        'Book a 30-minute demo. We\'ll show you how PRAXA Skills fits your training stack and build a custom scenario for your team on the spot.',
